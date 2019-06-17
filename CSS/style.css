@@ -2,26 +2,49 @@
     font-family: "super-mario";
     src: url("../Assets/font/CHLORINP.TTF")
 }
-
+canvas { 
+    width: 100%; 
+    height: 100% ;
+    position: absolute;
+    z-index:-1
+  }
 body{ 
     height: 100vh;
     width: 100vw;
     display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-    background-color: gray;
+    background-color: black;
     margin-top: 0;
+    color: gold;
+    font-family: super-mario
 }
 
 header{
     height:90vh;
     width: 90vw;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+    ". h1 ."
+    ". h2 .";
+    grid-template-rows: auto auto;
+    grid-template-columns: 35% auto 35%;
     transition: margin-right 4s ease-in-out 1s;
 
+}
+header>h1{
+    grid-area: h1;
+}
+header>h2{
+    grid-area: h2;
+    height:10px;
+    position: relative;
+    bottom:0;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: flex-end
 }
 header:active{
     transition: all 1s ease-out;
@@ -36,6 +59,7 @@ header:active{
 #content{
     border:20px inset #87ceeb ;
     background: skyblue;
+    color: darkred;
     /*display: grid;*/
     grid-area: content;
     height: 90vmin;
@@ -74,18 +98,18 @@ header:active{
     grid-area: category-2;
     display: grid;
 }
-#experience,#btn-1{
+#about-me,#btn-1{
     grid-area:experience;
     
 }
-#experience{
+#about-me{
     height:5vmin;
     width: 20vmin;
 }
 #btn-1{
     position: relative;
 }
-#education,#btn-2{
+#skills,#btn-2{
     grid-area: education;
     height:5vmin;
     width: 20vmin;
@@ -96,7 +120,7 @@ header:active{
 
 
 }
-#skills,#btn-3{
+#projects,#btn-3{
     grid-area: skills;
     height:5vmin;
     width: 20vmin;
@@ -105,7 +129,7 @@ header:active{
     position: relative;
 
 }
-#projects,#btn-4{
+#cv,#btn-4{
     height:5vmin;
     width: 20vmin;
 }
@@ -118,14 +142,11 @@ header:active{
 }
 .future, .past{
     display: none;
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
-    -moz-transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
+    opacity: 0
 }
 button{
     border: 10px inset blue;
     background: blue;
     max-width: 100px;
 }
+
