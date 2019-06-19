@@ -8,7 +8,6 @@ canvas {
     height: 100%;
     position: absolute;
     z-index: -1;
-    /* Change the hotspot - cursor: url(crosshair.cur) 0 0, default; */
     background: #F4F4F4;
     display: block;
 }
@@ -24,11 +23,8 @@ body {
     margin-top: 0;
     color: gold;
     font-family: super-mario;
-<<<<<<< HEAD
     cursor: url("../Assets/image/image2vector.svg"), pointer;
 
-=======
->>>>>>> 230d0dfb87e2e194612a9783879f6a6d33514930
 }
 
 header {
@@ -156,8 +152,7 @@ header:active {
 
 }
 
-#cv,
-#btn-4 {
+#cv,#btn-4 {
     height: 5vmin;
     width: 20vmin;
 }
@@ -166,20 +161,12 @@ header:active {
     position: relative;
 
 }
-<<<<<<< HEAD
 
 .present {
-=======
-#category-2{
-    
-}
-.present{
->>>>>>> 230d0dfb87e2e194612a9783879f6a6d33514930
     display: grid
 }
 
-.future,
-.past {
+.future,.past {
     display: none;
     opacity: 0
 }
