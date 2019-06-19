@@ -24,8 +24,11 @@ body {
     margin-top: 0;
     color: gold;
     font-family: super-mario;
+<<<<<<< HEAD
     cursor: url("../Assets/image/image2vector.svg"), pointer;
 
+=======
+>>>>>>> 230d0dfb87e2e194612a9783879f6a6d33514930
 }
 
 header {
@@ -163,8 +166,15 @@ header:active {
     position: relative;
 
 }
+<<<<<<< HEAD
 
 .present {
+=======
+#category-2{
+    
+}
+.present{
+>>>>>>> 230d0dfb87e2e194612a9783879f6a6d33514930
     display: grid
 }
 
