@@ -18,7 +18,7 @@ body{
     background-color: black;
     margin-top: 0;
     color: gold;
-    font-family: super-mario
+    font-family: super-mario;
 }
 
 header{
@@ -136,6 +136,9 @@ header:active{
 #btn-4{
     position: relative;
 
+}
+#category-2{
+    
 }
 .present{
     display: grid
